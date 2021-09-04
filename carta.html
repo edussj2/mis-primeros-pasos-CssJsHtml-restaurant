@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es"><!--Lenguaje:Español-->
+<head>
+    <meta charset="UTF-8"><!--Aparezcan las tildes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Se adapte a dispositivos moviles-->
+    <title>Aroma y Sabor</title><!-- Titulo-->
+    <link rel="icon" type="image/png" href="assets/iconos/logo.png"/><!--Icono-->
+
+    <!--Links CSS-->
+    <!--Nuestros estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--Slick -Libreria slider -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+
+    <!-- Iconos-->
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- Barra de navegacion-->
+    <nav class="barra-navegacion shadow">
+        <!-- Logo -->
+        <div class="izquierda-barra">
+            <a href="index.html">
+              <img src="assets/iconos/logo.jpeg" alt="Logo Aroma y Sabor">
+            </a>
+        </div>
+
+        <!-- Links -->
+        <ul class="centro-barra">
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-pescados"></i> 
+                    <span>Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="nosotros.html">
+                  <i class="fas fa-concierge-bell"></i>
+                    <span>Nosotros</span>
+                </a>
+            </li>
+            <li>
+                <a href="carta.html"  class="activo">
+                  <i class="fas fa-utensils"></i>
+                    <span>Carta</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                  <i class="fas fa-calendar-check"></i>
+                    <span>Reserva</span>
+                </a>
+            </li>
+            <li>
+                <a href="contacto.html">
+                    <i class="fas fa-phone-square"></i>
+                    <span>Contacto</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Contacto -->
+        <div class="derecha-barra">
+            <a href="http://m.me/AromaySaborDelivery" target="_blank">
+                <img src="assets/iconos/messenger.svg" alt="Messenger">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=978786910&text=¿Que platos tiene disponibles?" target="_blank">
+                <img src="assets/iconos/whatsapp.svg" alt="Whatsapp">
+            </a>
+        </div>
+    </nav>
+    <!-- Fin - Barra de navegacion-->
+
+
+    <!-- Slider -->
+    <header class="overflow-hidden banner2">
+        <h1>Carta</h1>
+    </header>
+
+    <!-- Contenido Principal-->
+    <main>
+        <section class="container pt-3 pb-5">
+            <ul class="nav tabla-carta" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a id="pescados-tab" data-toggle="tab" href="#pescados" role="tab" aria-controls="pescados" aria-selected="true"><i class="fas fa-fish"></i> Pescados y Mariscos</a>
+                </li>
+                <li class="nav-item">
+                  <a id="criollo-tab" data-toggle="tab" href="#criollo" role="tab" aria-controls="criollo" aria-selected="false"><i class="fab fa-hotjar"></i> Comida Criolla</a>
+                </li>
+                <li class="nav-item">
+                  <a id="especiales-tab" data-toggle="tab" href="#especiales" role="tab" aria-controls="especiales" aria-selected="false"><i class="fas fa-pepper-hot"></i> Especiales</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+
+                <!-- Pecados y Mariscos -->
+                <div class="tab-pane fade show active" id="pescados" role="tabpanel" aria-labelledby="pescados-tab">
+                    <div class="contenedor-carta">
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/parihuela.jpeg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>PARIHUELA</h3>
+                                <small>S/35.00</small>
+                                <p>Parihuela forma parte de la costa moqueguana, es una sopa que viene desde la época prehispánica.</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/ceviche.jpeg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>CEVICHE</h3>
+                                <small>S/40.00</small>
+                                <p>El ceviche peruano es sinónimo de orgullo y admiración para cada uno de los habitantes de este país sudamericano.</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+                        
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/chaufaMariscos.jpg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>ARROZ CHAUFA DE MARISCOS</h3>
+                                <small>S/15.00</small>
+                                <p>Consiste en arroz cocido combinado con verduras, entre ellas la cebolla china, tortilla de huevo en trozos y mariscos al gusto salteado en un wok con sillao y, opcionalmente, aceite.</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/chicharronPescado.jpeg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>CHICHARRÓN DE PESCADO</h3>
+                                <small>S/25.00</small>
+                                <p>El chicharrón de pescado es una receta de la cocina peruana muy fácil y rápida de preparar. </p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+                    </div>
+                </div>
+                <!-- Pecados y Mariscos -->
+
+                <!-- Comida y criollo -->
+                <div class="tab-pane fade" id="criollo" role="tabpanel" aria-labelledby="criollo-tab">
+                    <div class="contenedor-carta">
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/arrozPato.jpeg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>ARROZ CON PATO</h3>
+                                <small>S/28.00</small>
+                                <p>El Arroz con Pato es un platillo que se originó en el norte de Perú. Con el tiempo, se ha abierto camino y se ha convertido en uno de los platos típicos de la gastronomía nacional.</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/cabrito.jpeg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>ARROZ CON CABRITO</h3>
+                                <small>S/25.00</small>
+                                <p>Cabrito a la norteña es un plato típico de la cocina piurana, este delicioso plato macerado con chicha de jora, ají especial, ajos, culantro</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/papaHuancaina.jpg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>PAPA A LA HUANCAINA</h3>
+                                <small>S/10.00</small>
+                                <p>Se trata de un plato típico de la gastronomía peruana. Es una deliciosa combinación a base de papa sancochada y bañada con salsa de ají molido, leche, aceite y queso fresco.</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/ajiGallina.jpeg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>AJI DE GALLINA</h3>
+                                <small>S/12.00</small>
+                                <p>El ají de gallina tradicional es una receta típica del Perú. Sse caracteriza por su sabor a ají amarillo o ají peruano y todos los condimentos que lleva.</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+                    </div>
+                </div>
+                <!-- Comida y criollo -->
+
+                <!-- Especiales -->
+                <div class="tab-pane fade" id="especiales" role="tabpanel" aria-labelledby="especiales-tab">
+                    <div class="contenedor-carta">
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/milanesa.jpg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>MILANESA</h3>
+                                <small>S/23,00</small>
+                                <p>La milanesa es un filete, normalmente de carne vacuna, rebozado, que se cocina frito o al horno.</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/bisteckPobre.jpg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>BISTEC A LO POBRE</h3>
+                                <small>S/18.00</small>
+                                <p>El bistec a lo pobre es un plato muy contudente, ideal para personas con actividades de alto desgaste físico, ingresa y aprende a prepararlo.</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/polloPlancha.jpg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>POLLO A LA PLANCHA</h3>
+                                <small>S/16.00</small>
+                                <p>Se prepara con pechugas de pollo marinadas en una mezcla de jugo de naranja, limón, ajo, comino, y orégano. El pollo asado a la plancha se sirve con papas fritas y ensalada fresca.</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+
+                        <!-- PLATO -->
+                        <div class="item">
+                            <div class="imagen">
+                                <img src="assets/imagenes/chaufaPollo.jpeg" alt="">
+                            </div>
+                            <div class="texto">
+                                <h3>ARROZ CHAUFA DE POLLO</h3>
+                                <small>S/12.00</small>
+                                <p>Consiste en un arroz cocido que se saltea a fuego alto y muy rápido en un wok con verduras como cebolla china, raíces chinas, tortilla de huevo en trozos, carnes, salsa de soja y aceite.</p>
+                            </div>
+                        </div>
+                        <!-- PLATO -->
+
+                    </div>
+                </div>
+                <!-- Especiales -->
+              </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer class="container-fluid d-flex flex-column justify-content-center align-items-center pt-5 pb-3 text-center" style="color: #fff; font-size: 20px; font-weight: 300;background: #240d05;">
+        <p>aromaysabor@gmail.com</p>
+        <p>074 214893 // 978 786 910</p>
+        <p>Calle A - Lote 11, La Victoria</p>
+        <ul class="list-unstyled d-flex w-100 justify-content-center">
+            <li class="p-2">
+                <a href="https://www.facebook.com/AromaySaborDelivery" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+            <li class="p-2">
+                <a href="https://www.instagram.com/aromaysaborcix/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li class="p-2">
+                <a href="https://api.whatsapp.com/send?phone=978786910&text=¿Que platos tiene disponibles?" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="pt-5">&#169;2020 por Edu Cespedes</p>
+    </footer>
+
+   
+    <!-- Links JS -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Pooper-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Slick JS-->
+    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- Mi js-->
+    <script src="js/main.js"></script>
+
+    <!-- Links JS -->
+</body>
+</html>
